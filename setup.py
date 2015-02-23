@@ -12,7 +12,6 @@ setup(
     cmdclass = {'build_ext': build_ext},
     ext_modules = [Extension("hawkes_process", ["pyhawkes/hawkes_process.pyx"])],
     install_requires=[
-        'matplotlib==1.4.2',
         'mock==1.0.1',
         'nose==1.3.4',
         'numpy==1.9.1',
@@ -23,7 +22,6 @@ setup(
         'scipy==0.14.0',
         'six==1.8.0',
         'wsgiref==0.1.2',
-        'MySQL-python==1.2.5',
         'patsy==0.3.0',
         'statsmodels==0.6.1'
     ],
