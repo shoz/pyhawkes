@@ -1,1 +1,1 @@
-from pyhawks import HawkesProcess
+from pyhawks.hawkess_process import HawkesProcess

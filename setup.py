@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from distutils.core import setup
-from distutils.extension import Extension
+from distutils.extension import Extension, find_packages
 from Cython.Distutils import build_ext
 
 setup(
@@ -10,7 +10,8 @@ setup(
     author='Shoji Ihara',
     author_email='shoji.ihara@gmail.com',
     cmdclass = {'build_ext': build_ext},
-    ext_modules = [Extension("hawkes_process", ["pyhawkes/hawkes_process.pyx"])],
+    packages=find_packages(),
+    ext_modules = [Extension("pyhawkes.hawkes_process", ["pyhawkes/hawkes_process.pyx"])],
     install_requires=[
         'mock==1.0.1',
         'nose==1.3.4',
