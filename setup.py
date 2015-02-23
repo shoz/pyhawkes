@@ -23,6 +23,5 @@ setup(
         'six==1.8.0',
         'wsgiref==0.1.2',
         'patsy==0.3.0',
-        'statsmodels==0.6.1'
     ],
 )
